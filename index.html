@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chennamsetty Mohan Pavan Gopi - Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 2rem 0;
+        text-align: center;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .subtitle {
+        color: #f0f0f0;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+
+      .skill-card {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+        transition: transform 0.3s ease;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .skill-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .cyber-security {
+        border-left: 5px solid #e74c3c;
+      }
+
+      .blockchain {
+        border-left: 5px solid #f39c12;
+      }
+
+      .frontend {
+        border-left: 5px solid #3498db;
+      }
+
+      .about-section {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2rem;
+        border-radius: 15px;
+        margin: 2rem 0;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .tech-badge {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        font-size: 0.9rem;
+      }
+
+      .contact-section {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 2rem;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CHENNAMSETTY MOHAN PAVAN GOPI</h1>
+        <p class="subtitle">
+          Cyber Security Analyst | Blockchain Enthusiast | Frontend Developer
+        </p>
+      </header>
+
+      <div class="skills-grid">
+        <div class="skill-card cyber-security">
+          <div class="skill-icon">🔒</div>
+          <h3>Cyber Security Analyst</h3>
+          <p>
+            Specialized in threat detection, vulnerability assessment, and
+            security incident response. Experienced in penetration testing and
+            security auditing.
+          </p>
+        </div>
+
+        <div class="skill-card blockchain">
+          <div class="skill-icon">⛓️</div>
+          <h3>Blockchain Enthusiast</h3>
+          <p>
+            Passionate about decentralized technologies, smart contracts, and
+            cryptocurrency. Knowledgeable in blockchain architecture and DeFi
+            protocols.
+          </p>
+        </div>
+
+        <div class="skill-card frontend">
+          <div class="skill-icon">💻</div>
+          <h3>Frontend Developer</h3>
+          <p>
+            Creating responsive and interactive web applications using modern
+            frameworks and technologies. Focus on user experience and
+            performance optimization.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h3>About Me</h3>
+        <p>
+          I'm a multi-disciplinary professional combining expertise in
+          cybersecurity, blockchain technology, and frontend development. My
+          unique blend of skills allows me to create secure, innovative web
+          solutions while staying at the forefront of emerging technologies.
+        </p>
+
+        <h4>Technical Skills</h4>
+        <div class="tech-stack">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Solidity</span>
+          <span class="tech-badge">Kali Linux</span>
+          <span class="tech-badge">Wireshark</span>
+          <span class="tech-badge">Metasploit</span>
+          <span class="tech-badge">Web3.js</span>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <h3>Get In Touch</h3>
+        <p>
+          Interested in collaborating or discussing opportunities in
+          cybersecurity, blockchain, or web development?
+        </p>
+        <br />
+        <p>📧 Email: mohanpavanch@gmail.com.com</p>
+        <p>🔗 LinkedIn: /in/mohanpavangopi</p>
+        <p>🐙 GitHub: /mohanpavangopi</p>
+      </div>
+    </div>
+  </body>
+</html>
