@@ -3,204 +3,449 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chennamsetty Mohan Pavan Gopi - Portfolio</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Arial", sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      header {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        padding: 2rem 0;
-        text-align: center;
-        border-radius: 15px;
-        margin-bottom: 2rem;
-      }
-
-      h1 {
-        color: #fff;
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      }
-
-      .subtitle {
-        color: #f0f0f0;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-      }
-
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin: 2rem 0;
-      }
-
-      .skill-card {
-        background: rgba(255, 255, 255, 0.95);
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-        transition: transform 0.3s ease;
-      }
-
-      .skill-card:hover {
-        transform: translateY(-5px);
-      }
-
-      .skill-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      .cyber-security {
-        border-left: 5px solid #e74c3c;
-      }
-
-      .blockchain {
-        border-left: 5px solid #f39c12;
-      }
-
-      .frontend {
-        border-left: 5px solid #3498db;
-      }
-
-      .about-section {
-        background: rgba(255, 255, 255, 0.95);
-        padding: 2rem;
-        border-radius: 15px;
-        margin: 2rem 0;
-        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-      }
-
-      .tech-stack {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 1rem;
-      }
-
-      .tech-badge {
-        background: linear-gradient(45deg, #667eea, #764ba2);
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 25px;
-        font-size: 0.9rem;
-      }
-
-      .contact-section {
-        background: rgba(255, 255, 255, 0.95);
-        padding: 2rem;
-        border-radius: 15px;
-        text-align: center;
-        margin-top: 2rem;
-        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-      }
-
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 2rem;
-        }
-
-        .skills-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <title>Mohan Pavan Gopi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/jpeg" href="profile.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>CHENNAMSETTY MOHAN PAVAN GOPI</h1>
-        <p class="subtitle">
-          Cyber Security Analyst | Blockchain Enthusiast | Frontend Developer
-        </p>
-      </header>
-
-      <div class="skills-grid">
-        <div class="skill-card cyber-security">
-          <div class="skill-icon">🔒</div>
-          <h3>Cyber Security Analyst</h3>
-          <p>
-            Specialized in threat detection, vulnerability assessment, and
-            security incident response. Experienced in penetration testing and
-            security auditing.
-          </p>
-        </div>
-
-        <div class="skill-card blockchain">
-          <div class="skill-icon">⛓️</div>
-          <h3>Blockchain Enthusiast</h3>
-          <p>
-            Passionate about decentralized technologies, smart contracts, and
-            cryptocurrency. Knowledgeable in blockchain architecture and DeFi
-            protocols.
-          </p>
-        </div>
-
-        <div class="skill-card frontend">
-          <div class="skill-icon">💻</div>
-          <h3>Frontend Developer</h3>
-          <p>
-            Creating responsive and interactive web applications using modern
-            frameworks and technologies. Focus on user experience and
-            performance optimization.
-          </p>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo">MPG</div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
+    </nav>
 
-      <div class="about-section">
-        <h3>About Me</h3>
-        <p>
-          I'm a multi-disciplinary professional combining expertise in
-          cybersecurity, blockchain technology, and frontend development. My
-          unique blend of skills allows me to create secure, innovative web
-          solutions while staying at the forefront of emerging technologies.
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Mohan Pavan Gopi</span>
+        </h1>
+        <p class="hero-subtitle">
+          Cybersecurity & Blockchain Enthusiast | Frontend Developer
         </p>
-
-        <h4>Technical Skills</h4>
-        <div class="tech-stack">
-          <span class="tech-badge">HTML5</span>
-          <span class="tech-badge">CSS3</span>
-          <span class="tech-badge">JavaScript</span>
-          <span class="tech-badge">React</span>
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">Solidity</span>
-          <span class="tech-badge">Kali Linux</span>
-          <span class="tech-badge">Wireshark</span>
-          <span class="tech-badge">Metasploit</span>
-          <span class="tech-badge">Web3.js</span>
+        <p class="hero-description">
+          Passionate about creating secure and innovative solutions in the tech
+          industry
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/mohanpavangopi"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/mohanpavangopichennamsetty"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://hackerrank.com/profile/mohanpavanch"
+            target="_blank"
+            title="HackerRank"
+            ><i class="fab fa-hackerrank"></i
+          ></a>
+          <a href="mailto:mohanpavanch@gmail.com" title="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
       </div>
-
-      <div class="contact-section">
-        <h3>Get In Touch</h3>
-        <p>
-          Interested in collaborating or discussing opportunities in
-          cybersecurity, blockchain, or web development?
-        </p>
-        <br />
-        <p>📧 Email: mohanpavanch@gmail.com.com</p>
-        <p>🔗 LinkedIn: /in/mohanpavangopi</p>
-        <p>🐙 GitHub: /mohanpavangopi</p>
+      <div class="hero-image">
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Mohan Pavan Gopi" class="profile-photo" />
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Career Objective</h3>
+            <p>
+              Passionate and adaptive fresher with strong front-end skills and a
+              keen interest in Cybersecurity and Blockchain Technology. A
+              continuous learner with a positive mindset, eager to contribute
+              and grow in the tech industry.
+            </p>
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Guntur, Andhra Pradesh</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-phone"></i>
+                <span>6300731039</span>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-envelope"></i>
+                <span>mohanpavanch@gmail.com</span>
+              </div>
+            </div>
+            <h3>Soft Skills</h3>
+            <div class="soft-skills">
+              <span class="skill-badge"
+                ><i class="fas fa-lightbulb"></i> Optimistic and Adaptive</span
+              >
+              <span class="skill-badge"
+                ><i class="fas fa-trophy"></i> Self-Motivated and
+                Disciplined</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skill-items">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Solidity</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React.js</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="skill-items">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-shield-alt"></i> Specialization</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Cybersecurity</span>
+              <span class="skill-tag">Blockchain Technology</span>
+              <span class="skill-tag">Kali Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Responsive Food Ordering Website</h3>
+            <p>
+              Designed and developed a fully responsive and user-friendly food
+              ordering website.
+            </p>
+            <span class="status completed">Completed</span>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>Smart Vehicle Guardian (IoT)</h3>
+            <p>
+              Developed a real-time vehicle safety alert system using IoT
+              sensors.
+            </p>
+            <span class="status completed">Completed</span>
+            <div class="project-tags">
+              <span>IoT</span>
+              <span>Sensors</span>
+              <span>Real-time</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-hospital"></i>
+            </div>
+            <h3>Integrated Healthcare Ecosystem</h3>
+            <p>
+              Secure medical data sharing prototype using blockchain technology.
+            </p>
+            <span class="status completed">Completed</span>
+            <div class="project-tags">
+              <span>Blockchain</span>
+              <span>Healthcare</span>
+              <span>Security</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Cyber Suite - Cybersecurity Tools</h3>
+            <p>
+              Desktop/Web suite including File Scanner, Network Scanner, and
+              Secure File Transfer modules.
+            </p>
+            <span class="status ongoing">Ongoing</span>
+            <div class="project-tags">
+              <span>Cybersecurity</span>
+              <span>Scanner</span>
+              <span>Security</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Decentralized P2P Messenger</h3>
+            <p>
+              Peer-to-peer messaging application with blockchain-based public
+              key directory.
+            </p>
+            <span class="status completed">Completed</span>
+            <div class="project-tags">
+              <span>Blockchain</span>
+              <span>P2P</span>
+              <span>Messaging</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>B.Tech â€“ VVIT, Nambur, Guntur</h3>
+              <p class="degree">
+                CSE (IoT, Cyber Security, Blockchain Technology)
+              </p>
+              <span class="year">Expected 2026</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>CCBP 4.0 Academy â€“ NXTWAVE</h3>
+              <span class="year">2026</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Intermediate â€“ Vagdevi Junior College, Narasaraopet</h3>
+              <span class="year">2022</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>SSC â€“ S T Z P High School, Kotappakonda</h3>
+              <span class="year">2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications & Internships</h2>
+        <div class="cert-grid">
+          <div class="cert-section">
+            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Cyber Security Essentials</h4>
+                  <p>Cisco - Learned core cybersecurity concepts</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Programming in Java</h4>
+                  <p>NPTEL - Gained strong fundamentals of Java programming</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Introduction to Databases with SQL</h4>
+                  <p>C550 - Acquired knowledge of databases and SQL Querying</p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                  <h4>Google AI Essentials</h4>
+                  <p>
+                    Coursera - Learned fundamentals of artificial intelligence
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cert-section">
+            <h3><i class="fas fa-briefcase"></i> Internships</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <i class="fas fa-building"></i>
+                <div>
+                  <h4>APCOST - Project Intern</h4>
+                  <p>
+                    Andhra Pradesh Council of Science & Technology - Worked on
+                    government-supported innovation and research projects
+                  </p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-building"></i>
+                <div>
+                  <h4>Palo Alto Networks</h4>
+                  <p>
+                    Cybersecurity Virtual Internship - Gained hands-on
+                    experience in network security fundamentals, SOC operations,
+                    threat analysis, and cybersecurity best practices
+                  </p>
+                </div>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-building"></i>
+                <div>
+                  <h4>EduSkills</h4>
+                  <p>
+                    Ethical Hacking Virtual Internship - Learned ethical hacking
+                    fundamentals, penetration testing basics, and commonly used
+                    cybersecurity tools
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>6300731039</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>mohanpavanch@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Guntur, Andhra Pradesh</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <input type="text" id="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Mohan Pavan Gopi. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://github.com/mohanpavangopi" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/mohanpavangopichennamsetty"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://hackerrank.com/profile/mohanpavanch" target="_blank"
+            ><i class="fab fa-hackerrank"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
